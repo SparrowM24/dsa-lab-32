@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS currencies (
+    id SERIAL PRIMARY KEY,
+    currency_name VARCHAR(10) UNIQUE NOT NULL,
+    rate NUMERIC(15,6) NOT NULL
+);
